@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(83, 114, 108);
+}
+
+h1{
+    color:rgb(0, 0, 0);
+}
+
+h2{
+    color:rgb(34, 34, 34);
+}
+
+h3{
+    color:rgba(136, 12, 12, 0.974);
+}
+
+tr{
+    color:rgba(136, 12, 12, 0.974);
+}
+
+button{
+    border: rgb(0, 0, 0) solid 3px;
+  }

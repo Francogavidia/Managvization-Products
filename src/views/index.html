@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managvization</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+    <h1> Managvization Products</h1>
+    <hr>
+    <h2> Get Products</h2>
+    <button id="getProducts">
+        GET PRODUCTS
+    </button>
+
+    <hr>
+    
+    <h2> Search Products (not working, only APIS)</h2>
+    <form id="searchProducts" method="post" target="_blank"> 
+            Search by name: <input type="search" placeholder="Buscapina, queso..." id="formSearchName">
+            <button type="submit">
+                SEARCH PRODUCTS
+            </button>
+    </form>
+    <br>
+    <form id="searchProductsCategory" method="post" target="_blank"> 
+        Search by category: <input type="search" placeholder="ropa, comida..." list="listcateg" id="formSearchCategory">
+        <button type="submit">
+            SEARCH PRODUCTS
+        </button>
+    </form>
+        <datalist id="listcateg">
+            <option value="ropa">
+            <option value="comida">
+            <option value="electrodomestico">
+            <option value="farmacia">
+            <option value="ferreteria">
+        </datalist>
+
+    <hr>
+
+    <form id="formProducts">
+        <h2> Create Products</h2>
+        <h3>______NAME_______DESCRIPTION_____CATEGORY________PRICE______</h3> 
+        <input type="text" id="formNames"> 
+        <input type="text" id="formDescriptions">
+       <input type="text" id="formCategorys" list="categ" required pattern="[Cc]omida|[Ff]armacia|[Ee]lectrodomesticos|[Ff]erreteria |[Rr]opa"> 
+        <datalist id="categ">
+            <option>comida</option>
+            <option>electrodomestico</option>
+            <option>farmacia</option>
+            <option>ferreteria</option>
+            <option>ropa</option>
+        </datalist>  
+        <input type="number" id="formPrices">  
+        <button type="submit">
+            CREATE PRODUCTS
+        </button>
+    </form>
+
+    <hr>
+    
+    <table>
+        <thead> 
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>CATEGORY</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
